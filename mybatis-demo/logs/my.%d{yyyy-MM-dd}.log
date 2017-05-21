@@ -1,2 +1,5 @@
 2017-05-21 10:56:49,024 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member (mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
 2017-05-21 10:56:49,173 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mldnjava001321(String), null, 32(Integer), null, null, null
+2017-05-21 11:16:42,806 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member (mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
+2017-05-21 11:16:42,908 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mldnjava(String), null, 32(Integer), null, null, null
+2017-05-21 11:16:42,909 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - <==    Updates: 1

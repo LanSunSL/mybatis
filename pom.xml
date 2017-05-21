@@ -10,6 +10,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<mybatisdemo.version>0.0.1</mybatisdemo.version>
 		<mysql.version>5.0.4</mysql.version>
 		<mybatis.version>3.4.4</mybatis.version>
 		<!-- 配置日志的相关版本依赖 -->
@@ -31,6 +32,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>cn.mldn</groupId>
+				<artifactId>mybatis-util</artifactId>
+				<version>${mybatisdemo.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
 				<version>${mybatis.version}</version>
@@ -40,7 +46,7 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
@@ -56,7 +62,7 @@
 				<artifactId>slf4j-log4j12</artifactId>
 				<version>${slf4j.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -145,5 +151,6 @@
 	</build>
 	<modules>
 		<module>mybatis-demo</module>
+		<module>mybatis-util</module>
 	</modules>
 </project>
