@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.mldn</groupId>
 	<artifactId>mybatis</artifactId>
@@ -68,7 +68,7 @@
 		</profile>
 	</profiles>
 	<build>
-		<finalName>mybatisdemo</finalName>
+		<finalName>mybatis</finalName>
 		<resources>
 			<resource>
 				<!-- 此处的属性是profile中统一定义的路径的名称，不同的配置文件有不同的子目录 -->
@@ -122,4 +122,7 @@
 			</plugin>
 		</plugins>
 	</build>
+  <modules>
+    <module>mybatis-demo</module>
+  </modules>
 </project>
