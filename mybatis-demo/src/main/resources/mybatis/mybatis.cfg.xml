@@ -3,6 +3,11 @@
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	<typeAliases>
+		<package name="cn.mldn.mybatis.vo"/>
+<!-- 		<typeAlias type="cn.mldn.mybatis.vo.News" alias="News"/>
+ -->
+ 	</typeAliases>
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="jdbc"/>
@@ -15,6 +20,7 @@
 		</environment>
 	</environments>
 	<mappers>
+		<mapper resource="cn/mldn/mybatis/mapping/News.xml"/>
 		<mapper resource="cn/mldn/mybatis/mapping/Member.xml"/>
 	</mappers>
 </configuration>

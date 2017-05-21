@@ -3,3 +3,145 @@
 2017-05-21 11:16:42,806 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member (mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
 2017-05-21 11:16:42,908 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mldnjava(String), null, 32(Integer), null, null, null
 2017-05-21 11:16:42,909 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - <==    Updates: 1
+2017-05-21 11:34:14,076 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news (title,note) VALUES (?,?) 
+2017-05-21 11:34:14,226 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: Hello World(String), News, Big News(String)
+2017-05-21 11:34:14,262 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-21 11:34:38,012 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news (title,note) VALUES (?,?) 
+2017-05-21 11:34:38,105 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: Hello World(String), News, Big News(String)
+2017-05-21 11:34:38,107 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-21 11:35:02,926 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news (title,note) VALUES (?,?) 
+2017-05-21 11:35:03,104 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: Hello World(String), News, Big News(String)
+2017-05-21 11:35:03,106 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-21 11:43:57,959 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news (title,note) VALUES (?,?) 
+2017-05-21 11:43:58,188 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: Hello World(String), News, Big News(String)
+2017-05-21 11:43:58,191 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-21 11:43:58,238 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=?, note=? WHERE nid=? 
+2017-05-21 11:43:58,240 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==> Parameters: XXX(String), dodododo(String), 17(Long)
+2017-05-21 11:43:58,263 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - <==    Updates: 1
+2017-05-21 11:46:24,192 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=? 
+2017-05-21 11:46:24,400 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - ==> Parameters: 14(Long)
+2017-05-21 11:46:24,402 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - <==    Updates: 1
+2017-05-21 11:55:22,843 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=? 
+2017-05-21 11:55:23,014 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==> Parameters: 18(Long)
+2017-05-21 11:55:23,096 TRACE [cn.mldn.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-05-21 11:55:23,097 TRACE [cn.mldn.mapping.NewsNS.findById] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 11:55:23,133 DEBUG [cn.mldn.mapping.NewsNS.findById] - <==      Total: 1
+2017-05-21 11:55:35,203 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-05-21 11:55:35,313 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-05-21 11:55:35,387 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==    Columns: nid, title, note
+2017-05-21 11:55:35,388 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 2, News NO.3, <<BLOB>>
+2017-05-21 11:55:35,399 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 3, 新闻1, <<BLOB>>
+2017-05-21 11:55:35,399 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 4, 新闻1, <<BLOB>>
+2017-05-21 11:55:35,400 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 5, 新闻1, <<BLOB>>
+2017-05-21 11:55:35,401 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 11:55:35,401 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 7, 新闻1, <<BLOB>>
+2017-05-21 11:55:35,404 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 9, 新闻1, <<BLOB>>
+2017-05-21 11:55:35,404 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 11:55:35,405 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 11:55:35,405 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 11:55:35,406 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 15, xyxyxxy, <<BLOB>>
+2017-05-21 11:55:35,406 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 11:55:35,407 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 17, XXX, <<BLOB>>
+2017-05-21 11:55:35,407 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 11:55:35,407 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 11:55:35,409 DEBUG [cn.mldn.mapping.NewsNS.findAll] - <==      Total: 15
+2017-05-21 11:55:57,766 DEBUG [cn.mldn.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-05-21 11:55:57,897 DEBUG [cn.mldn.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-05-21 11:55:57,969 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==    Columns: nid, title, note
+2017-05-21 11:55:57,969 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 2, News NO.3, <<BLOB>>
+2017-05-21 11:55:58,014 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 3, 新闻1, <<BLOB>>
+2017-05-21 11:55:58,015 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 4, 新闻1, <<BLOB>>
+2017-05-21 11:55:58,016 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 5, 新闻1, <<BLOB>>
+2017-05-21 11:55:58,017 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 11:55:58,018 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 7, 新闻1, <<BLOB>>
+2017-05-21 11:55:58,022 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 9, 新闻1, <<BLOB>>
+2017-05-21 11:55:58,023 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 11:55:58,023 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 11:55:58,024 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 11:55:58,025 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 15, xyxyxxy, <<BLOB>>
+2017-05-21 11:55:58,025 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 11:55:58,026 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 17, XXX, <<BLOB>>
+2017-05-21 11:55:58,027 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 11:55:58,028 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 11:55:58,031 DEBUG [cn.mldn.mapping.NewsNS.findMap] - <==      Total: 15
+2017-05-21 12:06:40,320 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,note FROM news WHERE title LIKE ? LIMIT ?,? 
+2017-05-21 12:06:40,477 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==> Parameters: %e%(String), 1(Integer), 10(Integer)
+2017-05-21 12:06:40,561 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, note
+2017-05-21 12:06:40,562 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 12:06:40,581 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 12:06:40,582 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 12:06:40,583 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 12:06:40,584 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 12:06:40,585 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 12:06:40,588 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 12:06:40,588 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - <==      Total: 7
+2017-05-21 12:06:40,591 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM new WHERE title LIKE ? 
+2017-05-21 12:06:40,680 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %e%(String)
+2017-05-21 12:07:24,266 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=? 
+2017-05-21 12:07:24,413 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==> Parameters: 18(Long)
+2017-05-21 12:07:24,494 TRACE [cn.mldn.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-05-21 12:07:24,495 TRACE [cn.mldn.mapping.NewsNS.findById] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 12:07:24,508 DEBUG [cn.mldn.mapping.NewsNS.findById] - <==      Total: 1
+2017-05-21 12:07:24,514 DEBUG [cn.mldn.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-05-21 12:07:24,515 DEBUG [cn.mldn.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-05-21 12:07:24,517 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==    Columns: nid, title, note
+2017-05-21 12:07:24,517 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 2, News NO.3, <<BLOB>>
+2017-05-21 12:07:24,519 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 3, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,519 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 4, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,520 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 5, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,520 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 12:07:24,523 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 7, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,523 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 9, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,524 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 12:07:24,524 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 12:07:24,525 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 12:07:24,525 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 15, xyxyxxy, <<BLOB>>
+2017-05-21 12:07:24,526 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 12:07:24,526 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 17, XXX, <<BLOB>>
+2017-05-21 12:07:24,528 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 12:07:24,528 TRACE [cn.mldn.mapping.NewsNS.findMap] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 12:07:24,531 DEBUG [cn.mldn.mapping.NewsNS.findMap] - <==      Total: 15
+2017-05-21 12:07:24,538 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-05-21 12:07:24,540 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-05-21 12:07:24,543 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==    Columns: nid, title, note
+2017-05-21 12:07:24,543 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 2, News NO.3, <<BLOB>>
+2017-05-21 12:07:24,544 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 3, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,545 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 4, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,545 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 5, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,546 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 12:07:24,546 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 7, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,546 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 9, 新闻1, <<BLOB>>
+2017-05-21 12:07:24,547 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 12:07:24,547 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 12:07:24,548 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 12:07:24,548 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 15, xyxyxxy, <<BLOB>>
+2017-05-21 12:07:24,549 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 12:07:24,549 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 17, XXX, <<BLOB>>
+2017-05-21 12:07:24,550 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 12:07:24,551 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 12:07:24,560 DEBUG [cn.mldn.mapping.NewsNS.findAll] - <==      Total: 15
+2017-05-21 12:07:24,631 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,note FROM news WHERE title LIKE ? LIMIT ?,? 
+2017-05-21 12:07:24,633 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==> Parameters: %e%(String), 1(Integer), 10(Integer)
+2017-05-21 12:07:24,635 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, note
+2017-05-21 12:07:24,635 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 6, News NO.3, <<BLOB>>
+2017-05-21 12:07:24,636 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 11, user, <<BLOB>>
+2017-05-21 12:07:24,636 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 12, user, <<BLOB>>
+2017-05-21 12:07:24,637 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 13, abcdefg, <<BLOB>>
+2017-05-21 12:07:24,637 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 16, Hello World, <<BLOB>>
+2017-05-21 12:07:24,638 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 18, Hello World, <<BLOB>>
+2017-05-21 12:07:24,638 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 19, Hello World, <<BLOB>>
+2017-05-21 12:07:24,639 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - <==      Total: 7
+2017-05-21 12:07:24,640 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-05-21 12:07:24,642 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %e%(String)
+2017-05-21 12:07:24,665 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-21 12:07:24,666 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==        Row: 8
+2017-05-21 12:07:24,668 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - <==      Total: 1
+2017-05-21 12:07:24,669 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=? 
+2017-05-21 12:07:24,670 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - ==> Parameters: 14(Long)
+2017-05-21 12:07:24,671 DEBUG [cn.mldn.mapping.NewsNS.doRemove] - <==    Updates: 0
+2017-05-21 12:07:24,675 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news (title,note) VALUES (?,?) 
+2017-05-21 12:07:24,677 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: Hello World(String), News, Big News(String)
+2017-05-21 12:07:24,678 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-21 12:07:24,719 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=?, note=? WHERE nid=? 
+2017-05-21 12:07:24,720 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==> Parameters: XXX(String), dodododo(String), 17(Long)
+2017-05-21 12:07:24,722 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - <==    Updates: 1
