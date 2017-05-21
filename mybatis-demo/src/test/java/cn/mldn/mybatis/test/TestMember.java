@@ -21,7 +21,7 @@ public class TestMember {
 			SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputstream);
 			SqlSession session = factory.openSession();
 			Member vo = new Member();
-			vo.setMid("mldn1321");
+			vo.setMid("mldnjava001321");
 			vo.setAge(32);
 			System.out.println(session.insert("cn.mldn.mapping.MemberNS.doCreate", vo));
 			session.commit();
